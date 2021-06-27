@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #009688;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #e0e0e0;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--light);
+  font-family: var(--font-family-sans-serif);
+}
+
+.main-container {
+  flex: 1;
+  height: 100vh;
+  background-color: var(--gray);
+}
+
+.login-row {
+  background-color: var(--gray);
+  background-image: url('./assets/images/men_runnig.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-card {
+  background-color: transparent !important;
+  border: 0 !important;
+}
+
+.login-card-body {
+  background-color: #f8f8f8;
+  opacity: 0.95;
+  border-radius: 4px;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#submit-button {
+  background-color: var(--green);
+  color: var(--light);
+}
+
+#brand-title {
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin-left: -0.5rem;
+  color: var(--green);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+#brand-title > b {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-left: -0.7rem;
+  color: var(--orange);
+  opacity: 1;
+}
+
+.main-content {
+  background-color: var(--gray);
+  flex: 1;
+  overflow: hidden;
+}
+
+.card {
+  background-color: var(--light);
+}
+
+.menu-icon {
+  font-size: 1.7rem;
+  color: var(--gray-dark);
+}
+
+.dropdown-item-icon {
+  font-size: 1.2rem;
+  color: var(--gray-dark);
+}
+
+#exit-button {
+  width: 100px;
+  margin-left: 1rem;
+}
+
+.active-icon {
+  color: var(--light);
+}
+
+.main-title {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: var(--green);
+  opacity: 0.7;
+  letter-spacing: -1.5px;
+  text-transform: capitalize;
+}
+
+.main-table {
+  flex: 1;
+}
+
+.form-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: var(--green);
+  opacity: 0.7;
+  letter-spacing: -1.5px;
+  text-transform: capitalize;
+}
+
+.custom-btn-edit {
+  background-color: var(--cyan) !important;
+  border-color: var(--cyan) !important;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-edit:hover {
+  background-color: var(--cyan) !important;
+  border-color: var(--cyan) !important;
+  opacity: 1;
+}
+
+.custom-btn-delete {
+  background-color: var(--red) !important;
+  border-color: var(--red) !important;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-delete:hover {
+  background-color: var(--red) !important;
+  border-color: var(--red) !important;
+  opacity: 1;
+}
+
+.custom-btn-add {
+  background-color: transparent !important;
+  border-color: var(--orange) !important;
+  color: var(--orange) !important;
+  opacity: 0.85;
+}
+
+.custom-btn-add:hover {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+  color: var(--light) !important;
+  opacity: 0.85;
+}
+
+.custom-btn-add:focus {
+  box-shadow: 0 0 0 0.25rem rgb(253 126 20 / 50%) !important;
+}
+
+.custom-btn-save {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+  color: var(--light) !important;
+  opacity: 0.8;
+}
+
+.custom-btn-save:hover {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+  color: var(--light) !important;
+  opacity: 1;
+}
+
+.custom-page-link > a {
+  background-color: var(--cyan) !important;
+  border-color: var(--cyan) !important;
+  opacity: 0.7;
+}
+
+.custom-page-link > a:focus {
+ box-shadow: 0 0 0 0.25rem rgb(23 162 184 / 25%);
+}
+
+.breadcrumb-link {
+  color: var(--cyan) !important;
+  text-decoration: none !important;
+  opacity: 0.7;
+}
+
+.breadcrumb-link:hover {
+  opacity: 1;
+}
+
+.profile-photo {
+  height: 350px;
+  width: 350px;
+}
+
+.profile-main-container {
+  flex: 1;
+}
